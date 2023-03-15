@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Reservation";
+}
+
+<div class="container bg-danger" style="margin-top:30px;" >
+    <h1>Reservation</h1>
+    <br />
+
+    <form>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="surname">Surname:</label>
+            <input type="text" class="form-control" id="surname" placeholder="Enter surname" name="surname" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" class="form-control" id="date" placeholder="MM/DD/YYY" name="date" required />
+        </div>
+        <div class="form-group">
+            <label for="request">Request:</label>
+            <textarea class="form-control" id="request" placeholder="If you have any request please let us now." name="request" rows="3"></textarea>
+        </div>
+        <div class="container mt-3">
+            <div class="dropdown" style="width:150px">
+                <select required>
+                    <option value="">Person</option>
+                    <option value="">For 4 person</option>
+                    <option value="">For 2 person</option>
+                    <option value="">For 1 person</option>
+                </select>
+            </div>
+
+        </div>
+        <br />
+        <input type="submit" name="submit" value="Submit" style="width:150px; height:30px; background-color:cornflowerblue; margin-bottom:30px; border:hidden; border-end-end-radius:30px"
+               formaction="@Url.Action("Reservation1")" formmethod="post" />
+    </form>
+    
+</div>
+
+
+
