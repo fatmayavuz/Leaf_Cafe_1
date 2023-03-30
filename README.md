@@ -1,4 +1,4 @@
-# Leaf_Cafe_1
+# Leaf_Cafe
 Leaf Restaurant's website.
 It is just Front-end web development. There are 4 different pages. On the first page, there is some information about Leaf Restaurant.
 And another page shows what kind of meals, drinks and desserts are available at the Leaf Restaurant.
